@@ -1,0 +1,334 @@
+/* FOR BLOCK QUOTE Source: https://codepen.io/brucebentley/pen/JVmjWw*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700");
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono:400,500,700");
+.blockquote > p{
+  margin-top: -3.0rem;  
+  margin-bottom: 0px;
+}
+.blockquote > p, .blockquote > footer{ text-align: center; }
+.blockquote {
+  font-size: 0.9rem;
+  border: 1px solid rgba(222, 226, 230, 0.54);
+  border-left: 0.5rem solid rgba(0, 123, 255, 0.54);
+  color: #6c757d;
+  font-family: "Open Sans", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
+  line-height: 1.6;
+  /*margin: 1.875rem auto;*/
+  margin: 0px;
+  max-width: 100%;
+  /*padding: 4.6875rem 1.875rem 1.875rem 4.6875rem;*/
+  padding: 4rem 1.875rem 1rem 3.3rem;
+  position: relative;
+  width: 100%;
+}
+.blockquote:before {
+  font-size: 6.875rem;
+  color: rgba(0, 123, 255, 0.54);
+  content: '\201C';
+  font-family: "Noto Serif", "Georgia", "Times New Roman", "Times", serif;
+  font-size: 5.5rem;
+  height: 3.75rem;
+  left: 0.3rem;
+  line-height: 1;
+  max-width: 3.75rem;
+  position: absolute;
+  text-align: inherit;
+  top: 0rem;
+  width: 100%;
+}
+.blockquote:after {
+  content: '';
+}
+.blockquote-footer {
+  font-size: 80%;
+  color: #343a40;
+  display: block;
+  font-style: normal;
+  font-weight: 700;
+  /*margin-top: 1rem;*/
+  padding: 0;
+}
+.blockquote-footer:before {
+  content: '\2014\00A0';
+}
+.publication-metadata > span{
+  border: 1px;
+  border-color: black;
+}
+/* https://codepen.io/bharanim/pen/BoLNdd
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic);
+.container:has(> blockquote) {
+  max-width: 800px;
+  margin: 80px auto;
+}
+
+.quote-card {
+  text-align: center;
+  background: #fff;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 120px;
+}
+.quote-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+.quote-card cite {
+  font-size: 16px;
+  max-width: 80%;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -85px;
+  line-height: 100px;
+  right: -0px;
+  font-size: 25em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+@media (max-width: 640px) {
+  .quote-card:after {
+    font-size: 22em;
+    right: -25px;
+  }
+}*/
+
+
+/* END */
+
+.btn-xs {
+    padding: .125rem .25rem;
+    font-size: .75rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+}
+.nav-item:not(.active):hover::after {
+    -webkit-transform: scaleX(1);
+    -ms-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.nav-item:not(.active)::after {
+  content: "";
+  height: 4px;
+  background: white;
+  width: 100%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scaleX(0) translate3d(0, 0, 0);
+  transform: scaleX(0) translate3d(0, 0, 0);
+  display: block;
+  margin-top: 0px;
+}
+
+.textsc {
+  font-variant: small-caps;
+}
+.footer .ai, .footer .fas, .footer .fab{
+  text-shadow: 2px 2px #e1e1e1;
+}
+.footer > .container, .footer > .container-fluid {
+  background-color: #f5f5f5;
+  border-top-color: lightgray;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.highlight{
+  background-color: #fcf8e3;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  /*text-decoration: underline;*/
+  border-bottom: 4px solid black;
+  font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+  /*text-decoration: underline;*/
+  border-bottom: 4px solid white;
+  font-weight: bold;
+}
+.author{ /*font-variant: small-caps;*/ }
+.venue { font-variant: small-caps; }
+.author-myself{
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.profile-photo{
+  max-width: 240px;
+}
+
+.fake-link {
+  cursor: pointer;  
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.fake-link:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.fake-link:not([href]):not([class]) {
+  color: inherit;
+  text-decoration: none;
+}
+.fake-link.text-primary:hover, .fake-link.text-primary:focus {
+  color: #0056b3 !important;
+}
+/*body{
+  font-family: "Helvetica Neue","Helvetica","Roboto","Arial",sans-serif;
+}*/
+
+/* Excerpt from latex.now.sh */
+/*@font-face {
+font-family: 'Latin Modern';
+font-style: normal;
+font-weight: normal;
+font-display: swap;
+src: url('https://latex.now.sh/fonts/LM-regular.woff2') format('woff2'),
+  url('https://latex.now.sh/fonts/LM-regular.woff') format('woff'),
+  url('https://latex.now.sh/fonts/LM-regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Latin Modern';
+font-style: italic;
+font-weight: normal;
+font-display: swap;
+src: url('https://latex.now.sh/fonts/LM-italic.woff2') format('woff2'),
+  url('https://latex.now.sh/fonts/LM-italic.woff') format('woff'),
+  url('https://latex.now.sh/fonts/LM-italic.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Latin Modern';
+font-style: normal;
+font-weight: bold;
+font-display: swap;
+src: url('https://latex.now.sh/fonts/LM-bold.woff2') format('woff2'),
+  url('https://latex.now.sh/fonts/LM-bold.woff') format('woff'),
+  url('https://latex.now.sh/fonts/LM-bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Latin Modern';
+font-style: italic;
+font-weight: bold;
+font-display: swap;
+src: url('https://latex.now.sh/fonts/LM-bold-italic.woff2') format('woff2'),
+  url('https://latex.now.sh/fonts/LM-bold-italic.woff') format('woff'),
+  url('https://latex.now.sh/fonts/LM-bold-italic.ttf') format('truetype');
+}
+body{
+  font-family: 'Latin Modern', Georgia, Cambria, 'Times New Roman', Times, serif;
+  line-height: 1.8;
+  font-size:1rem;
+}*/
+
+/* Inspired by https://colorlib.com/etc/404/colorlib-error-404-9/ */
+/*.notfound .notfound-404>div:first-child {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #ffa200;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border: 5px dashed #000;
+  border-radius: 5px;
+}
+
+.notfound .notfound-404>div:first-child:before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  top: -5px;
+  -webkit-box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+          box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.1) inset;
+  border-radius: 5px;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: 'Cabin', sans-serif;
+  color: #000;
+  font-weight: 700;
+  margin: 0;
+  font-size: 90px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+}
+
+.notfound h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 33px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+.notfound p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+}
+
+.notfound a {
+  font-family: 'Cabin', sans-serif;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #8f8f8f;
+  border: none;
+  border-radius: 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.notfound a:hover {
+  background-color: #2c2c2c;
+}*/
